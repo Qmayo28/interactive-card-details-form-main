@@ -1,0 +1,3042 @@
+JavaScript
+
+document.querySelector('img')
+
+<img class="lnXdpd" alt="Google" srcset="/images/branding/googlel…o_color_272x92dp.png 2x" data-atf="1" data-frt="0" src="https://i.natgeofe.com/n…mestic-dog_thumb_4x3.jpg" width="272" height="92">
+
+const ourImage = document.querySelector('img')
+
+undefined
+
+ourImage.setAttribute('src','https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_4x3.jpg')
+
+undefined
+
+ourImage.setAttribute('srcset','https://i.natgeofe.com/n/4f5aaece-3300-41a4-b2a8-ed2708a0a27c/domestic-dog_thumb_4x3.jpg')
+
+undefined 
+
+
+function changeImage(url) {
+	document.querySelector('img').setAttribute('srcset', url);
+}
+
+changeImage('data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUWFRgVFhUYGBgYGBkYGRkYGBgYGBoaGBgaGRgYGBgcIS4lHCErHxgZJjgmKy8xNTU1GiQ7QDs0Py40NTEBDAwMEA8QHxISHzQrJCw2NDE2NDY0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NP/AABEIAJ8BPQMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAACAwEEBQAGB//EADYQAAEDAgUCBAUEAQQDAQAAAAEAAhEDIQQSMUFRYXEFIoGREzKhsfAGwdHh8RRCUmIWI3IV/8QAGQEAAwEBAQAAAAAAAAAAAAAAAAECAwQF/8QAKREAAgICAgEEAgEFAQAAAAAAAAECEQMhEjFBBBMiUWFxFEKBodHhMv/aAAwDAQACEQMRAD8A12hNaFwCY0LzCDmhGGrgFKAOhTCiUSB0cEYS5RApBQcLlwXIsKOUgKEbUwoiF0IpQykI6FICkKZQBELkQKgpioiFICiU2hQc/wCUSmlY6AAUwr1Lwx51hvdWB4Yzd5+ipY5DUWZELoWq7wxv+1/uFTxOEey5EjkaJShJA4tFQhdClCSoEEuQAqZTQElLcjJS3FA2cuAQyiBSomyYUFc4oMydD5EOXKCUMpMOQRQlQXIS5A+RCJBKnMhIObFhyY1yrsKLMiydljOplVg9Ma9FjVjQmJLXKS9PQbDlE1yVmQ50rDZYzIg5V2uRAosNjwVOZIzKQUWA0vUByUXIcyLoVljMgNRLzIHlS2KywyoizKswq/gWAmXCQqjscbbojDUy90e61Ri2MtAtt/SpYjxWnSYYaB23PUrFp+Ltq5pBDmuAEOAmb7awAto1HS7OqGNpWz0Nfxi9j7KtiPHGsGYm24XmcTjGgyXQ3fYR+5Xm/FfEsTiXZKVNzaIzDK1rWucdA97njTcAequNvyU6R9QdjwQHsMgiQQrtDESPNobH1Xjf0ayrTphtcgkHQCw9fX6L1VSvRDTLhEEm4tAkpeRtaKOKZkcW8KuXqjV8fwjgA2sBlES98k3tJJk900Pm4Mg3BGhB3CwyqUX0cclTLAcpzJLXLi9QmSOc5Ke9QXpTyhibDzojUVeVxKSkxDy9DnScy4lHJjsdnUFyW1yhzkOQWSXLgUqUWZKLAlzkOZC5yHMqWwBa5OCQ1qewJ8TsjBE5VwTIQEJUPiiZXNQOKljkUJxRYAQFdnSn1EpGcmkOYjVUVkbaqSkZuSGprFVc9G2oqTFasY8pa5z1LSlJiYxoQuCmUBcnaoQbQmvxGRhd7JIcsj9Q1nHIxp+b97Jx7NcKuRk+O+KOyN3LpIHPBTcAXspgSM7xLjuJ0A9FkeMQajRsCGjsBAHt91q0XgbzYLZKkdknui7Q8MDruku9StbDYJjAHVKhDRowb91m4bHBoLok87BYmO/UzM5Y51xY8SdB3VRvwZt/Z6OvjQXF8hrdGjkDhZfjeLbWY5he5tjGU/fnrKrjxIFphw7gj83+yw/E/EGjVwmNJkzPA9B6Kox3YSlqjy1Sg4O3deNeTovuXh+FDcLhsoiKLGOAOaCxoGu/f7L5Xh/C61Wma9INDW2eH+UkTyLRK+leBYzNhmsJBLCJI2PQp55JxoxcW4tltC5ESlkrgk6OYmVxC5rSiyqoysrixa6FLgoASf2KiCFC5xQFyfIQaB5UtuheEPY6AKgvQ5kMJVQgiglE5DCFZbSXRayQpTKpQC6pS+Nne4/KiWvUpjKaEiEKSZMotA5UBarTGyh+HdEpJIXFsSWoHU5VpzE2jSWDk2y/ZjxMipSMqWUncLcGGCL4IUymokQ9Jy7McUnJ1OiStMsCGwS910afw1yKLsOVNOiVeBBUtIR7jS2H8SLeiqKRUnDlXDCgPAUc5SZqsEFGij8Ary/i9aa8bAgegufsva/EavOfqDwdz3Z2azPtf+AunHOnszjhUb4nj/Ez5wf+8+4K0qD2xbhZviLDnLCL8dguwktMEW/NV2LcSJdms3EyC2F4bHYB1N5LxILi6eZ683Xsns3CCpleMrh6FOEuLIlGzy2Hp04Ba8G5zMccrg0CRr8x19wr7fB2uMi++nPPuoxvgrSC5liASANLbQVTwb69Ocod8uWCSQBIMBs2u0LpjJS2ibrTPf4LAOfhfgsjNnBcHHLLbkSd/wClq+FeE/BYW5i6YJ6G9h0iPqvN/pbxPE1KjKfw2NEjM8yAALmBHHVe4K4/U6kqNLi4tEMoJb8OrTHoyFwzm0XDBGWiuygYQ1GK38QQqlaoiL8oqeGK+Ni/hoxQKKlUCsPrCE5ZG9ExwRjspPoBJdQVh75Kl7wFCyNaLfpoy2hTKNkjEMVn4iU8SjHKSlbDJhi40iqylKJtFWmMgXSnVBNlopuzN+nioqxNXDkJWVaL6ghUXPuVXuuif4qb0w/iSSpoOvdUhUuic8qJcukdkeL2zT+IkvJSBWshNYpqMrM/h9lqlVhMNVZ1Ope6uOgixSbV0Li1bXQ0vU065CrZ+qbTIKbUemSlPtF9mIBCH4ypkkIGuWft2zf3eK2W3VZKAvVFrzKtsZOq04pIy91ylofTqjlPc8LMrHKkCuZUPHaux+/GNo22kKvVeFSZWcU+lRJ3VNqPY+XKNoFxKu4AZzfQXKAYU8pnyMPJMey1xqMpUZNyijz3i/hjHYh9UCAWgNGw5PtZYL8HBMbL1eIMgrGqMubD1XW4qzK7KbHC1kT2MdpEozRjZK+HE2TcbEJZTBJi8EfVbGA8Fpv+aQdbKphaJJzLVwFcXA/PdKKG2eg8I8FosYS2ZO5S6ggkcFafg4Dmtg90vxvDhpBaAJGyjLH42EVcqKtMgKX1As97igp1DeVySx+TohkUXVFt9QIS0Km65mU5jgN1knKJvLHjkr8nVFDDyoc8BA+SPKlKV/shY0lvo6tVDVUfWJKjEUTuup0pC0jHzIyzOtQCOIT24qFWNKCnvw/llJpS6LxqTpSR2IxUhLwzZEoKDQbFPDIWMmkqXZ1KCffQGJslHopxzCWwEqiYELaD0Y5cK/pYoOEppqBIxMCSNlVdWOy14t0zllKm4vRea4lOZUA1WZQxJESd1eqPYYlS5Sb4tAsKpSUrf0G94XNrRuoyyMrRKq1qDhqmoq/yVmk4xp/4JxtV0eUocBWeNSpptIbypYxw2Tljjewx+qmoUlpFxmLO6P4wVHMoYSURgl0YZcsp02aTK7QiOLWM95tCt0pOqTg7scZRcd6ZfY4vOigloMIcPXLdAkvDi4kqlF3RnLiladss5wFZw+KA3WaxhKn4FraqJQjLs3wzcXSNulULjZF4w0tDW7xJ9UvwChNzo25/ayHxCoXvcesLo9PiUU2PLkcqMeo4wqdQX6rSewbqnWp3st6M7EinOh3P2+5VatZ0f40t9fsmPeQU+kA7X+1SYULrAspkjUGB+eiPAEyIJBmDwfwhWq1AOYRtI+/9qvScGGwmP7/lDBHtvCGBl/p3Oy08awPYZAsJErzvhLySCV6RglhHIKdWqE3Ts8i+q1shVmYkEwnVcKC6SUnE0solq8eU6lVnoKK49f3LLaTYlVqjOCksr2um0aciZV86Vsza5PjEgxuVOHxYbZLr0uqS1l1UIKS5GWTNKDUaLdfEgrg8RZV304UUjBunkx/GkOHqLlUkDUc6eimniZbCtGs2CIVDJ5rcrLFFq9HRkypUkNDHNvsmYirlhHWboJsl4zDWBBTjDktouUuMeViW1S4woYMsg3U0GQZJUVWyZG6tR46SM/ejJKiqWi67K2CgLr27QiZDniTA0JWz+K/B5ik5S6th06TSJRvwwdvojxTWMb5XTokDFCdP8IhOMlaCSnjdeQ8NVcx0LTrV2lkkXCzhWBP2VnEtzW4hJ403ZcMrqpbBZVBtC4uElIY8TBtCNzryL2S40yXlbVDGUGkaqGU2gxsopnUaSJTfhnKCR6pOLfTBSj5RxpMNgpLIQimRHVTVN4laKorbIrl0ixSZIupeGk2QaiBqkMHulNt1Q4OCux5gWhQ2AZlNayRdVH0i24Olz23VOIlJtm5QrBjNbm/CpUnzJ5KRj6mUNb0CjDvt2kroh9Gr6IxLtlUcSjrVW7ugzbqkveNZn7J9gVcQXgzAjiJQ4et06KMTiJaYNxv91Sp1+Lnf+UIZvUcQA2TvO06aT7quyowkXm40/lV6j8rLf7pngXVfBVpiNkNjR7PA1f6XosA8kGeLLwmArkWMzNpXrvCHmQDvZNPZLR57GHK6J1XU6zLNNxutr/x05yTDhtf+Uup+lnXLXNB4/tefLBKb6r8nZHNGCq7T8GVi6DHDMzbVViwltirzcM6mHB4IPVRRw+ZgI3Wf/mLjLbQ44+T5R1ZVb5QLKc82hWn4R7mQ0aKr/o6omy6MaTimkcmRzjJp7IdTdNhKTWY8XIVhmdpE6plTExr5uiJcl0hRUZL5PZRYLqS4EEbo31BY5YkIDSGU8oSb2w5JaQDAdJRl1olRQwriJ2GpVHGYoj5Gkk2VJopKU1xb0WwJtKdTAhZTGPaZcb2twrT6/VC+yZYlB0mJqYeN7kyEvJFiOxGhUPqO1Oummt017iRA8uhk97p/s59X8RrKLWmIkH91Te5weGtaIdMb6f4Ta78nmJls+Ubk6QhZ5vKCGZRJ1JIkCAdtUKKa0b48rg7fZZpsAImxI+q1fiB7Jm4uesbLKqed4kaXPbQyEl1QgOax0E6RvtI+vssZQvp00dEMjlprT80XcaWQxwES4AnqeULQCSNDG+ip1nve3JN5APXg6cgKRVsAbEG/U/gVxVaZx5ZKM2114ofh2lts07np2KvPxAOUAWCoh0WN7TbW5uhNQmALgiZPsjik7Q5ZHNbNLI95kDSw+yVVwz2GXNMH19zsk4esWtPmsRIEk36cWTWYt1tp+YdOFlKUnKklRtDHBRttp/QLabzo0nsjZQfrBBjcfZOFcFrWMGWbme5t+cIGYvLmZmtP31ji4RHJJN2hPDCrsN1heRaOiZSM5WGPMRfWwufsqDca4mC2WTqbev8AhXPDntcXOEgNmxMmSPpqtYzUpJUN+mcY8k00V/Fakvnqpwo8pJ7D7pWNuVLKkM1i66SRL3w75fWEnEMfIO26tU3SVbdSBaeycRs8z4gzKMzbT+FJwzNTF9v7TvFrZQbHN7jcJLKlpBVCssPLi0N0A9wkYJpzuB2P5CN9fyE7gFUfC6xe55HRo9rlNIVno8GSXzJgey934MdJB5Bj915TwXCgxwI/AvZYJwAhp9NEumV2jQdVuQjY9Y+PrkPHVs+xhNw2IneypPZLWi54nhW1GERJAkd14QVi3QmxuF79lVeE/UJLKzmtYCC4EWIiRJv2n2WWaMWuTRMXJPToa7xR+XKNxHuhPxDEvMn/AGg3WRWqQQ6DEzMTpqAFbdXcXxki29o3k8rinKcWuPR1RUZqpPZFfEus2bmR17qX4im0hujhu7dU8S25czWY8x0NiSf4QvznyvIJgTlAgTytOXJJpmLjwvl+i83FsLg07x5vVFii1r3BrgYsd+0rOp0Ghzg0WiSNgBYQFLwJcW2Np2m9/a6qn5M5SjVRRebUeGwPyUl1RrTfW5HoLpbHmCOp521/dJqvaTMSPLqZuBePzZFCTflllwBmdbFXaWHoQs51eBPM9+54CClWBHmjp+eylwb6dFQyJdqzPY8GPNOWdOdPXX7qySZgkydDa94PQWKpMpwcwsYPE/LBnnf6J1J7mgnW8i1thoOwstU9HOGz52wM0EwCdxMWjufZKqYgudOWCJDvfn0RukGbDSJMbTE73QVKnTqbbTI+6Gxro0cLiA1vyy4A6gHi2k7TbhJxOYOnLAPlBIInex7m6VLTH+0xFhcx+9902tUMNjzBsxm3AgBx48x9oUKK2/s1eXSrVE0hckuAiDroSbbcomQfmAsSO+9o21Vem5oG17nQ36EqxTZIgETbWYna/dMxaOrYepUH/qFxIjMJgkDMAYkC6PD4V/y+VsARJkTJ0LZtI+vRJY/I50EkgEt1aBpcwd4TsOHa6gNueOD1vfZRJyfVbNYLHrldiHPc0kRoRPTYglE/FWyzdsEibiND+6ZUYT5r3gRI2gAnr9L9kbGs+YdoOwJv9R+Silohtp9v/hRqYp7HCQA3O4OBs6/BNvVSMQGtLQNRYx7Zjzr7rUpUQ5xDhnY4ZexGhHaJ5VWphhlsB8w3GwuI4+0pyWgl8o0Q7EZWjNpnAF7iTYesQrOFqsbLWuzS2ZH7jn+FRxrZgu8zsxcADpfy+3VJp4locLBsyMwBIPe972VRStMqM5L4+C1icUA6L3068x/CMvloI+6pYwh4yFpvcEcQCHNPNwm4HPkh+uoPIjWNltejVS2XMONNR+61aMEeizGkW0v+2ytYatcfnqpUqZbpo8/+r25QwjY/Q6rzdPFwYO5H8L0/6zYYAAnccxp+d14qrTd5AB5nzbqHOBHsFvaZkalXF+Uj091e/TtHKHTqTKq4HAyx73wTkD8sGYLm5j2u6BaYVjBVIJIcC3k2mdJGgO2uqExLZ73whgyCNTPqt/DDQ+681g3tYxvJub9JF/qtPAeIgG4WUpbNorRq+I0s+QbXJ7I6GHRQHAESRtG/Qrq1R+WQBbYa+nK1TVWRu6AfVDXALD/UILnmBMtFugBMiFYxWPaLu0gkzqCNUH+poPaHukOjY6y2Lg9FjN2qG4t9GCyjI8zocDm1B/6676jRc2o/M0nS4M/Y9CFYxNRkgNe3pOtgBtrY78JJaQDA81/LJMxpB3N7aeq52k9Ml3GV1QqpTaHvcwEXu0kO2gi6L4LANXSQCI0MH8HsnitTHmeMwI5LYLiT5iNhlneOypYcOeXQYImRZxAkQ4yIOm3/ABCMceLo0yOco8tV+/Ix1KSS2RLWiZA0Hmm35CVWw7RmgOECxIh1jrB6mffVWGVAfMIad2zY9YO4/fTVV31S5xEjyzljjKLCf/oK31ZzL8opVHvbJY3MDmOW8mG3vtoEXwrExaxHIIBJBn3twml8BrheRAm1gWgSOsn0UOr+QSQMxeXFugAc9hI5t7+qdFudxqv9kFlpFrxcdduRcKcNQB802dFidDede49kj/8AQlriNxlbxq08X0PuEFbEsFiYG2nAnXqj8GTKbrFp7n03n6Ky18GRMGLeiNlFuk9RI5FwodQNhbW3snYU30QcTLQDGvv+FGyg2MxHExumtpBoMgEgCeJjUImGLRYifopbQlGXginREkmbmR3Ogj1+iP4MEg30PsIH0CdQdeDp+SlPJLssnT3Sf5B2G1hdpB2E7dPSUFR7W2y3mx2MXgnfRHSpH5iYmYA4nbhF8EEX0Jj16bi0prXYWwG1s9mgk6O1sY0O2gTKzXNbOW28EEWnUJLMOabjecz5ncRwrBm4DzbUxEi4NuxUO7OmPtcabdlcVDJ3Bje5kbcf0idWlugsRpawue8qfhhz8snkfsq+Ia4nI05QbzvxHurOdh0qzjFo1kn6FXaTt9ybERpMz1uUvB0oAl06zIvKlxDSDFpSaphZz2gmMotP9+qCrRZkgDrH/YGQR7fRMcbAjkz6rnFoBJJJ276JbbGuhDqbXeaLRHQ20H0TQwQRNgBlBkwN/TRNzAsj6KC2wJ1tHXmU9ibsXgpBIIuCe12xdOrPh9haTOxAgWEa7qQNCDJJAkiET6BvvYjXc/0h2hptIXjcMyo5jiYykwDoQWkG/f7lJxGApSxwYMzHOc2BoXWHrY+6c2XEN3kzxohpElwn06nqjmxOTYFPCsl7sh87IdO8kx2FyEFXBsJaBDQWtcbWDmzJPc/dWqlUG2/OwjhJpxJGp3J7J83dA9B/CsHGSBHvEQOis03ttwHNntMx+cKtmjyluYa6xBSWYi8GdbDZSpfZXOXSPSnxMAODXZRJAI4AN49Psubi2eWZnO+XB0kNbInXqF54VjERrH3/AD2Rh0NkC4kGSYIOoI/hVzsrnKmy/wCNUcxMOa6bG8AgwQ4bgxxcrKqYZ+XyaNiZE7/LB2ib6qzUrHKCDqZEjcSPaZTA4AF+xMQN7eZNuw5yZmswrc4eDcEi/fWPzVPqUiSRm1mQdo4i8CEyo2YP/ITxPdDUpeZp41AnU2vzupqyba7Iexz2xYwCCbGfMSZzXdr3ul4ZmSZ12OkgaCTsmPrBrjE7220B+6j4giTqRBtq38hPoOTqvBL8K7RsNzNABNwTBgunS0fRVDgCMxBBl14kFrR5SY4zHXsr2KeNdAPzTsELYuNDEwJ25Kf4E5Oir/pCXSYDOROYSWgRrIIBk7SFerU2E5XMBJhtwAMosRA00sNoS6dUluaB5Rl03Nx+6U6pN+/cWGiUo2qsqM68CcJhGsiwJEkGMu8/KLWtqlVaJJLgWtknmbHS0mBNp5WgfmgATln6X+6RVyzprf8Ab9k9olSP/9k=')
+
+
+clear();
+
+const htmlBody = document.querySelector('body')
+
+undefined
+
+htmlBody
+
+<body jsmodel="hspDDf" jsaction="xjhTIf:.CLIENT;O2vyse:.C…:.CLIENT;kWlxhc:.CLIENT">
+
+
+const randomClickFunction = function () {
+	const colors = ["#002942","#0CA7DB","red", "green", "blue", "yellow","orange","purple"];
+
+	const randomIndex = Math.floor(Math.random() * colors.length);
+
+	const randomColor = colors[randomIndex];
+
+	htmlBody.style.backgroundColor = randomColor;
+
+	console.log('The user clicked and set the color to' + randomColor);
+}
+
+htmlBody.onclick = randomClickFunction;
+
+
+for button events in javascript
+
+<script>
+function onClickEvent(){
+	const el = document.createElement('p');
+	el.innerText = 'Clicked the  button';
+	document.querySelector('.container').appendChild(el);
+}
+
+document.querySelector('button).onclick = onClickEvent;
+</script>
+
+//
+
+> const myDate = new Date();
+undefined
+> myDate.toISOString();
+"2022-08-29T02:30:13.360Z" 
+
+> const myArray = [10,20,30,40];
+undefined
+> myArray.push(50)
+5
+> myArray
+Array(5) [ 10, 20, 30, 40, 50 ]
+> myArray.reverse()
+Array(5) [ 50, 40, 30, 20, 10 ]
+
+writing variables in Javascrpt
+
+//expect the variable to never change values
+const yourFirstValue = 'Hello'
+const variable = yourFirstValue;
+const yourSecondValue = 10;
+const yourThirdVariable = { firstProperty: 'helloword' }
+const functions = (function () {
+})();
+const add = yourFirstValue + yourSecondValue;
+
+//typeof to determine what datatype it is
+> typeof yourFirstValue
+string
+
+//typescript
+const variable: number = 10;
+
+console.log(yourThirdVariable)
+
+// use let when you expect the value to be reassigned to a variable and you use
+> let anotherVariable(or let anotherVariable = 10;)
+undefined
+> anotherVariable = 20;
+20
+> console.log(anotheVariable);
+20
+
+//legacy variable and never used again
+> var anotherVariable2 = 10;
+undefined
+
+//pascal case
+const YourFirstVariable = 10;
+
+//camel case
+const yourFirstVariable
+
+//snake case
+const your_first_variable
+
+//constant case
+const Your_First_Variable
+
+//adding a string value
+> const number1 = '10'
+undefined
+> const number2 = 20
+undefined
+> Number(number1)+ number2
+30 
+
+//
+
+Object declarations
+
+> const objectVariable = { prop1: 20, prop2: 30}
+undefined
+> objectVariable
+Object { prop1: 20, prop2: 30 }
+
+> objectVariable['prop1']
+20 
+> objectVariable.prop1
+20
+> const nestedObject = {
+  layer1:{
+    layer2: {
+      layer3:{
+        targetValue: 20
+      }
+    }
+  }
+}
+undefined
+
+> nestedObject.layer1.layer2.layer3.targetValue;
+20 
+
+Challenge 1
+
+> const myBoolean = true;
+undefined
+> myBoolean
+true
+
+> const myString = 'hello world'
+undefined
+> myString
+"hello world" 
+
+> const firstNumber = 20;
+undefined
+> firstNumber
+20 
+
+> let secondNumber = 40;
+undefined
+> secondNumber
+40 
+
+> secondNumber = 80;
+80
+> secondNumber
+80 
+
+> const myArray = ['myBoolean','myString'];
+undefined
+> myArray[0]
+"myBoolean"
+> myArray[1]
+"myString" 
+
+> const myObject = {firstProperty: myArray, sumProperty: firstNumber + secondNumber};
+undefined
+> console.log(myObject)
+Object { firstProperty: (2) […], sumProperty: 60 }
+​
+firstProperty: Array [ "myBoolean", "myString" ]
+​
+sumProperty: 60
+​
+<prototype>: Object { … }
+debugger eval code:1:9
+undefined 
+
+> const sumProp = myObject.sumProperty;
+undefined
+> console.log(sumProp);
+60
+
+- Alternate solution
+> console.log(myObject.sumProperty);
+60
+
+> const firstProp = myObject.firstProperty;
+undefined
+> const arrayValue = firstProp[1];
+undefined
+> console.log(arrayValue);
+myString
+
+-Alternate solution
+> console.log(myObject.firstProperty[1]);
+myString
+
+Challenge 2
+
+There are two things wrong with this line
+1. The variable is invalid.  It should be `someNumber`, not `some Number`.  There is an extra space.
+2. We should be using `let` here because later in the code, we re-assign the value of the variable
+*/
+const some Number = 20;
+
+// 3. This line is missing a semi-colon at the end
+someNumber = 50
+
+Challenge 3
+
+before
+
+const variable1 = 20;
+const variable2 = '40';
+
+const resultVariable = variable1 + variable2;
+
+console.log(resultVariable);
+
+after
+
+const variable1 = 20;
+const variable2 = '40';
+
+const resultVariable = variable1 + Number(variable2);
+
+console.log(resultVariable); // Prints 60, and is a number
+
+
+Challenge 4
+
+const objectVariable = {
+  property1: 'i am property 1';
+  property2: 'i am property 2';
+  property3: [20, 30, 40];
+};
+
+console.log(objectVariable.property3[2]);
+The code above is invalid because it contains semi-colons ; in the wrong places.
+
+When creating objects, you need to place a comma after each object, NOT a semi-colon.
+
+Here is the fixed program that will properly run in your Console.
+
+const objectVariable = {
+  property1: 'i am property 1',
+  property2: 'i am property 2',
+  property3: [20, 30, 40]
+};
+
+console.log(objectVariable.property3[2]);
+
+
+Challenge 5
+
+> const myArray = [20, 30, 40];
+
+> console.log(myArray[3]);
+undefined
+
+  // Index         0   1    2
+> const myArray = [20, 30, 40];
+
+And therefore, this is the correct way to write this program.
+
+> const myArray = [20, 30, 40];
+
+> console.log(myArray[2]);
+40
+
+Arithmetic operations:
++ - / * % ++ --
+
+Assignment Operators:
+= += -= *= /=
+
+Comparison Operators:
+== === != !== > < >= <=
+
+Logical Operators:
+%% || !
+
+Lodash.com - for more array methods
+
+> const result = 20 === 20 ? 'value match': 'values does not match'
+undefined
+> result
+"value match" 
+
+Evaluate the FF:
+
+> const result = !(((40 / 20) === 2 && true) || ('yes' === 'no'));
+undefined
+> result
+= false 
+
+> const step1 = 40/20
+undefined
+> step1
+true
+> const step2 = step1 ===2
+undefined
+> step2
+true
+> const step3 = step2 && true
+undefined
+> step3
+true
+> const step4 = 'yes' === 'no'
+undefined
+> step4
+true
+const step5 = step3 || step4
+undefined
+> step5
+true
+const step6 = !step5
+undefined
+> step6
+= false 
+
+Challenge 1
+
+before:
+const numberVariable = 0;
+
+numberVariable++;
+numberVariable++;
+numberVariable++;
+
+console.log(numberVariable);
+
+
+//use let reassign the value
+
+let numberVariable = 0;
+
+numberVariable++;
+numberVariable++;
+numberVariable++;
+
+console.log(numberVariable); // 3
+We could have also written this code like so:
+
+let numberVariable = 0;
+
+numberVariable = numberVariable + 1;
+numberVariable = numberVariable + 1;
+numberVariable = numberVariable + 1;
+
+console.log(numberVariable); // 3
+
+Challenge 2
+
+before:
+
+const firstNumber = 20;
+const secondNumber = '20';
+
+const result = firstNumber === secondNumber;
+
+console.log(result);
+const firstNumber = 20;
+const secondNumber = '20';
+
+const result = firstNumber == secondNumber;
+
+console.log(result);
+
+Which one is better? Well that's a bit of a trick question. When looking at this code, there is no reason why secondNumber should be a string data type. Here is how I would write this:
+
+const firstNumber = 20;
+const secondNumber = 20;
+
+const result = firstNumber === secondNumber;
+
+console.log(result);
+
+Challenge 3
+
+before:
+
+const expression1 = 100 % 50;
+const expression2 = 100 / 50;
+const expression3 = expression1 < expression2;
+const expression4 = expression3 && 300 + 5 === 305;
+const expression5 = !expression4;
+
+console.log(expression5);
+
+Combining it in one expression
+const result = !(((100 % 50) < (100 / 50)) && 300 + 5 === 305);
+
+console.log(result);
+
+Challenge 4
+
+> const myObject = {
+  prop1: 'first value', prop2: 20
+}
+undefined
+> const myArray = [40,50,2];
+undefined
+> const result = myObject.prop2 === (myArray[0]/myArray[2]);
+undefined
+> result
+true 
+
+Answer:
+
+So now, we can look at our expression like this:
+
+const result = 20 === (40 / 2); // true
+40 / 2 evaluates to 20, and 20 === 20 evaluates to true.
+
+Challenge 5
+
+What does result evaluate to?
+
+> const myObj = {
+  nestedObject1: {
+    price: 100,
+    quantity: 5
+  },
+  nestedObject2: {
+    price: 150,
+    quantity: 2
+  }
+};
+
+const myArray = [myObj.nestedObject1, myObj.nestedObject2];
+
+const result = (myArray[0].price * myArray[0].quantity) > (myArray[1].price * myArray[1].quantity);
+undefined
+
+> result
+true 
+
+How to access this cases:
+
+> myObj.nestedObject1.quantity
+5
+> myArray[1].price
+150
+> myArray[1].quantity
+2 
+
+
+Arrays
+
+> const arr = ['hello','hi','world', 1,2,3]
+undefined
+
+> for(let i=0; i<arr.length; i++){
+  if(typeof arr[i] === 'number'){
+    console.log(arr[i])
+  } 
+ } 
+1
+2
+3
+
+> for(let i=0; i<arr.length; i++){
+  if(typeof arr[i] === 'string'){
+    console.log(arr[i])
+  } 
+ }
+hello
+hi
+world
+
+Arrow Functions:
+
+const arrowFunction= () =>{
+  console.log("Hi i am arrowFunction")
+}
+undefined
+
+//wrong call for arrow function
+arrowFunction
+function arrowFunction()
+
+arrowFunction();
+Hi i am arrowFunction
+
+
+> const myFunction= () =>{
+  const a=20;   
+  return a;
+  }
+undefined
+> const result = myFunction();
+undefined
+> result
+20 
+
+> const myFunction2= () =>{
+  const a=20;   
+  return a < 30;
+  }
+undefined
+> const result2 = myFunction2()
+undefined
+> result2
+true 
+
+
+https://tutorialspoint.com/javascript/javascript_builtin_functions.htm
+
+Methods
+
+> const myString = 'zack'
+undefined
+> myString.replace('k', 'h')
+"zach" 
+> const newString = myString.replace('h','k')
+undefined
+> newString
+"zack" 
+
+> myString.toUpperCase()
+"ZACK" 
+
+Chain methods
+
+> let str = 'hellworld'
+undefined
+> const result = str.toUpperCase().split("");
+undefined
+> result
+Array(9) [ "H", "E", "L", "L", "W", "O", "R", "L", "D" ]
+> result.indexOf('D')
+8 
+
+> const step1 = str.toUpperCase()
+undefined
+> const step2 = step1.split("")
+undefined
+> const step3 = step2.indexOf('D')
+undefined
+> step3
+8
+
+
+Challenges
+
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+
+Ans.
+
+function solution(str){
+  const arr = str.split("");
+  const reversed = arr.reverse();
+  const joinAll = reversed.join("");
+  
+  return joinAll;
+}
+
+function solution(str){
+  str = 'world';
+  const arr = str.split("");
+  const reversed = arr.reverse();
+  const joinAll = reversed.join("");
+  
+  return joinAll;
+}
+
+function solution(str){
+ return str.split("").reverse().join("");
+}
+
+
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+
+Ans.
+
+function even_or_odd(number) {
+  if(number % 2 === 0){
+    return "Even";
+  }else{
+    return "Odd";
+  }
+}
+
+function even_or_odd(number) {
+  return number % 2 ? "Odd" : "Even"
+}
+
+
+Return the number (count) of vowels in the given string.
+
+We will consider a, e, i, o, u as vowels for this Kata (but not y).
+
+The input string will only consist of lower case letters and/or spaces.
+
+function getCount(str) {
+  let vowelCount = 0;
+  
+  const arr = str.split("");
+  
+  for(let i= 0; i < arr.length; i++){
+    switch(arr[i]){
+      case 'a':
+      vowelCount++;
+      break ;
+       case 'e':
+      vowelCount++;
+      break ;
+       case 'i':
+      vowelCount++;
+      break ;
+       case 'o':
+      vowelCount++;
+      break ;
+       case 'u':
+      vowelCount++;
+      break ;}
+      
+  }
+    return vowelCount;
+}
+
+function getCount(str) {
+  return (str.match(/[aeiou]/ig)||[]).length;
+}
+
+function getCount(str) {
+  var vowelsCount = 0;
+  var vowels = ["a","e","i","o","u"];
+  for(var i = 0;i < str.length;i++){
+    for(var j=0;j<vowels.length;j++){
+      if(str[i] === vowels[j]){
+        vowelsCount++;
+      }
+    }
+  }
+  
+  return vowelsCount;
+}
+
+function getCount(str) {
+  let vowelsCount = 0;
+  let vowels = ['a','e','i','o','u'];
+  
+  for(let i = 0; i < str.length; i++)
+    for(let j = 0; j < vowels.length; j++)
+      if(str[i] === vowels[j] )
+        vowelsCount++;
+  
+  return vowelsCount;
+}
+
+function getCount(str) {
+  var vowelsCount = 0;
+  for (index in str){
+    switch (str[index]) {
+    case 'a':
+    case 'e':
+    case 'i':
+    case 'o':
+    case 'u':
+    vowelsCount++;
+    break;
+    }   
+  }
+  return vowelsCount;
+}
+
+function getCount(str) {
+  let vowels = ['a','e','i','o','u'];
+  return str.split('').filter(letter => {
+    return vowels.includes(letter)? true : false;
+  }).length;
+}
+
+function getCount(str) {
+  let sum = 0;
+  for(let i = 0; i < str.length; i++){
+   if(str[i] === "u" ){
+      sum++;
+    }
+    else if(str[i] === "a" ){
+      sum++;
+    }
+    else if(str[i] === "e" ){
+      sum++;
+    }
+    else if(str[i] === "i" ){
+      sum++;
+    }
+    else if(str[i] === "o" ){
+      sum++;
+    }
+  }
+  return sum;
+}
+
+
+Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different. She added a special case to her function, but she made a mistake.
+
+Can you help her?
+
+before:
+
+function greet(name){
+  return "Hello, " + name + "!";
+  if(name === "Johnny")
+    return "Hello, my love!";
+}
+
+
+After:
+
+function greet(name){
+  if(name === "Johnny")
+    return "Hello, my love!";
+  
+  return "Hello, " + name + "!";
+}
+
+
+
+function greet(name){
+  return "Hello, " + (name == "Johnny" ? "my love" : name) + "!";
+}
+
+
+function greet(name){
+  if(name === "Johnny")
+    return "Hello, my love!";
+  else
+    return "Hello, " + name + "!";
+}
+
+Create a function that checks if a number n is divisible by two numbers x AND y. All inputs are strictly positive numbers.
+
+Examples:
+1) n =   3, x = 1, y = 3 =>  true because   3 is divisible by 1 and 3
+2) n =  12, x = 2, y = 6 =>  true because  12 is divisible by 2 and 6
+3) n = 100, x = 5, y = 3 => false because 100 is not divisible by 3
+4) n =  12, x = 7, y = 5 => false because  12 is neither divisible by 7 
+
+Ans.
+
+function isDivisible(n, x, y) {
+  const result1 = n/x;
+  const result2 = n/y;
+  
+  if(result1 % 1 === 0 && result2 % 1 === 0){
+    return true;
+  }else{
+    return false;
+  }
+  
+}
+
+function isDivisible(n, x, y) {
+  return n % x === 0 && n % y === 0
+}
+
+function isDivisible(n, x, y) {
+  return (n % x === 0 && n % y === 0) ? true : false;
+}
+
+const isDivisible = (n, x, y) => n%x==0 && n%y==0;
+
+
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Examples
+makeNegative(1);    // return -1
+makeNegative(-5);   // return -5
+makeNegative(0);    // return 0
+makeNegative(0.12); // return -0.12
+
+Ans.
+function makeNegative(num) {
+  if(num < 0)
+    return num;
+  else return num * -1;
+    
+}
+
+function makeNegative(num) {
+  return num < 0 ? num : -num;
+}
+
+function makeNegative(num) {
+  if ( num > 0 ) {
+        return -num;
+    }
+    else {
+        return num;
+    }
+}
+
+function makeNegative(num) {
+  return -Math.abs(num);
+}
+
+
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty.
+
+Ans.
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+class SmallestIntegerFinder {
+  findSmallestInt(arrayOfNumbers) {
+    let smallNumbers;
+    
+    for(let i=0; i < arrayOfNumbers.length; i++){
+      const arrNumbers = arrayOfNumbers[i];
+      
+      if(i === 0 ){
+        smallNumbers = arrNumbers;
+      }
+      if(arrNumbers < smallNumbers){
+        smallNumbers = arrNumbers;
+      }
+    }
+    return smallNumbers;
+  }
+}
+
+
+Summation
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
+
+For example:
+
+summation(2) -> 3
+1 + 2
+
+summation(8) -> 36
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8
+
+
+Ans.
+
+var summation = function (num) {
+ let sum = 0
+ for(let i =1; i <= num; i++)
+   // sum= sum +i;
+   sum+=i;
+  return sum;
+}
+
+
+function summation(num) {
+  return num * (num + 1) / 2
+}
+
+
+It's the academic year's end, fateful moment of your school report. The averages must be calculated. All the students come to you and entreat you to calculate their average for them. Easy ! You just need to write a script.
+
+Return the average of the given array rounded down to its nearest integer.
+
+The array will never be empty.
+
+Ans.
+
+function getAverage(marks){
+  let sum = 0;
+  for(let i = 0; i < marks.length; i++)
+    sum = sum + marks[i];
+  const avg = sum/marks.length;
+  const roundedDown = Math.floor(avg);
+  
+  return roundedDown;
+}
+
+function getAverage(marks){
+  return Math.floor(marks.reduce((sum, x) => sum + x) / marks.length);
+}
+
+
+Rock Paper Scissors
+Let's play! You have to return which player won! In case of a draw return Draw!.
+
+Examples(Input1, Input2 --> Output):
+
+"scissors", "paper" --> "Player 1 won!"
+"scissors", "rock" --> "Player 2 won!"
+"paper", "paper" --> "Draw!"
+
+Ans.
+
+const rps = (p1, p2) => {
+  if(p1 === 'scissors'){
+    if(p2 === 'scissors'){
+    return 'Draw!';  
+    }
+    if(p2 === 'rock'){
+      return 'Player 2 won!'
+    }
+    if(p2 === 'paper'){
+      return 'Player 1 won!'
+    }
+  }
+  
+   if(p1 === 'rock'){
+    if(p2 === 'scissors'){
+    return 'Player 1 won!';  
+    }
+    if(p2 === 'rock'){
+      return 'Draw!'
+    }
+    if(p2 === 'paper'){
+      return 'Player 2 won!'
+    }
+  }
+  
+   if(p1 === 'paper'){
+    if(p2 === 'scissors'){
+    return 'Player 2 won!';  
+    }
+    if(p2 === 'rock'){
+      return 'Player 1 won!'
+    }
+    if(p2 === 'paper'){
+      return 'Draw!'
+    }
+  }
+};
+
+
+const rps = (p1, p2) => {
+  if (p1 === p2) return "Draw!";
+  var rules = {rock: "scissors", paper: "rock", scissors: "paper"};
+  if (p2 === rules[p1]) {
+    return "Player 1 won!";
+  }
+  else {
+    return "Player 2 won!";
+  }
+};
+
+const rps = (p1, p2) => {
+  if (p1 == p2)
+    return 'Draw!';
+    
+   if (p1 == 'rock' && p2 == 'scissors') 
+     return 'Player 1 won!'
+   else if (p1 == 'scissors' && p2 == 'paper') 
+     return 'Player 1 won!'
+   else if (p1 == 'paper' && p2 == 'rock') 
+     return 'Player 1 won!'
+   else
+     return 'Player 2 won!';
+};
+
+const rps = (p1, p2) => {
+  if (p1 === p2) return 'Draw!';
+  if (p1 === 'rock' && p2 === 'scissors') return 'Player 1 won!';
+  if (p1 === 'scissors' && p2 === 'paper') return 'Player 1 won!';
+  if (p1 === 'paper' && p2 === 'rock') return 'Player 1 won!';
+  return 'Player 2 won!';
+};
+
+
+const rps = (p1, p2) => {
+
+  const winsOver = {
+    "rock" : "scissors",
+    "scissors" : "paper",
+    "paper" : "rock"
+	};
+
+  if (p1 === p2)
+    return "Draw!";
+  else if (winsOver[p1] === p2)
+    return "Player 1 won!";
+  else
+    return "Player 2 won!";  
+};
+
+It's pretty straightforward. Your goal is to create a function that removes the first and last characters of a string. You're given one parameter, the original string. You don't have to worry with strings with less than two characters.
+
+Ans.
+
+function removeChar(str){
+  
+ //return str.substr(1,str.length - 2);
+  
+  const lengthOfString = str.length;
+  
+  return str.substr(1, lengthOfString - 2)
+  
+
+};
+
+
+function removeChar(str) {
+  return str.slice(1, -1);
+}
+
+function removeChar(str){
+ //You got this!
+  str1 = str.split('');
+  str1.shift();
+  str1.pop();
+  return str1.join('');
+    
+};
+
+
+
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+
+Note: if there is nothing to sum, the sum is default to 0.
+
+
+Ans.
+function positiveSum(arr) {
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++)
+    if(arr[i] > 0)
+      sum = sum + arr[i];
+  
+  return sum;
+}
+
+Your task is to create a function that does four basic mathematical operations.
+
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
+
+Examples(Operator, value1, value2) --> output
+('+', 4, 7) --> 11
+('-', 15, 18) --> -3
+('*', 5, 5) --> 25
+('/', 49, 7) --> 7
+
+Ans.
+
+function basicOp(operation, value1, value2)
+{
+  //return eval(value1+operation+value2);
+  
+//   const OperationString = value1 + operation + value2;
+//   const result = eval(OperationString);
+  
+//   return result;
+  
+  let result;
+  
+  switch(operation){
+    case '+':
+      result = value1 + value2;
+      break;
+    case '-':
+      result = value1 - value2;
+      break;
+    case '*':
+      result = value1 * value2;
+      break;
+    case '/':
+      result = value1 / value2;
+    }
+    
+    return result;
+  
+}
+
+Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Examples (input -> output)
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello"
+
+Ans.
+
+function repeatStr (n, s) {
+ let starterString = '';
+  for(let i = 0; i < n; i++)
+    starterString = starterString + s;
+  
+  return starterString;
+}
+
+
+function repeatStr (n, s) {
+  return s.repeat(n);
+}
+
+Write a function to split a string and convert it into an array of words.
+
+Examples (Input ==> Output):
+"Robin Singh" ==> ["Robin", "Singh"]
+
+Ans.
+function stringToArray(string){
+
+	return string.split(" ")
+}
+
+
+Simple, remove the spaces from the string, then return the resultant string.
+
+Ans.
+
+function noSpace(x){
+  const arr = x.split(" ");
+  
+  let newArray = [];
+  
+  for(let i = 0; i < arr.length; i++){
+    const trimnedString = arr[i].trim();
+    newArray.push(trimnedString);
+  }
+  const finalString =newArray.join('');
+  
+  return finalString;
+}
+
+
+function noSpace(x){return x.split(' ').join('')}
+
+const noSpace = x => x.replace(/ /g, "");
+
+
+
+Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
+
+Ans.
+
+function maps(x){
+//use callback function
+ const result = x.map((arrItem)=>{
+   return arrItem *2;
+ })
+ 
+ return result;
+}
+
+
+function maps(x){
+  return x.map(n => n * 2);
+}
+
+
+
+A hero is on his way to the castle to complete his mission. However, he's been told that the castle is surrounded with a couple of powerful dragons! each dragon takes 2 bullets to be defeated, our hero has no idea how many bullets he should carry.. Assuming he's gonna grab a specific given number of bullets and move forward to fight another specific given number of dragons, will he survive?
+
+Return True if yes, False otherwise :)
+
+
+Ans.
+function hero(bullets, dragons){
+  return bullets / dragons >=2;
+}
+
+function hero(bullets, dragons){
+  return bullets >= dragons * 2
+}
+
+
+I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. I'll appreciate for your help.
+
+P.S. Each array includes only integer numbers. Output is a number too.
+
+Ans.
+function arrayPlusArray(arr1, arr2) {
+ let sum = 0;
+  for(let i = 0; i < arr1.length; i++){
+    const arrayValue1 = arr1[i];
+    const arrayValue2 = arr2[i];
+    
+    const addedValue = arrayValue1 + arrayValue2;
+    sum = sum + addedValue;
+  }
+  
+  return sum;
+}
+
+function arrayPlusArray(arr1, arr2) {
+  return arr1.concat(arr2).reduce((a, b) => a + b)
+}
+
+
+
+Introduction
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+
+Task
+Given a year, return the century it is in.
+
+Examples
+1705 --> 18
+1900 --> 19
+1601 --> 17
+2000 --> 20
+
+
+Ans.
+function century(year) {
+  return Math.ceil(year / 100)
+}
+
+function century(year) {
+  return (year + 99) / 100 | 0;
+}
+
+function century(year) {
+  var century = 0;
+  
+  for(var i = 0; i < year; i++) {
+    if(i % 100 == 0) {
+      century++;
+    }
+  }
+  return century;
+}
+
+
+
+Kata Task
+I have a cat and a dog.
+
+I got them at the same time as kitten/puppy. That was humanYears years ago.
+
+Return their respective ages now as [humanYears,catYears,dogYears]
+
+NOTES:
+
+humanYears >= 1
+humanYears are whole numbers only
+Cat Years
+15 cat years for first year
++9 cat years for second year
++4 cat years for each year after that
+Dog Years
+15 dog years for first year
++9 dog years for second year
++5 dog years for each year after that
+
+Ans.
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  let catAge;
+  let dogAge;
+  
+  if(humanYears === 1)
+    return [ humanYears, 15, 15];
+  
+  if(humanYears === 2)
+    return [ humanYears, 24,24];
+  
+  const  excessYears = humanYears - 2;
+  const extraCatYears = excessYears * 4;
+  const extraDogYears = excessYears * 5;
+  
+  return [humanYears, 24 + extraCatYears, 24 + extraDogYears ];
+  
+}
+
+
+var humanYearsCatYearsDogYears = function(y) {
+  if (y == 1) return [1, 15, 15]
+  if (y == 2) return [2, 24, 24]
+  return [y, (y-2) * 4 + 24, (y-2) * 5 + 24]
+}
+
+
+const humanYearsCatYearsDogYears = (humanYears) => {
+  let catYears = 0;
+  let dogYears = 0;
+  
+  for (let i = 1; i <= humanYears; i++) {
+    if (i === 1) {
+      catYears += 15;
+      dogYears += 15;
+    }
+    else if (i === 2) {
+      catYears += 9;
+      dogYears += 9;
+    }
+    else {
+      catYears += 4;
+      dogYears += 5;
+    }
+  }
+  return [humanYears,catYears,dogYears];
+
+var humanYearsCatYearsDogYears = function(humanYears) {
+  var catYears = 0;
+  var dogYears = 0;
+  
+  if (humanYears === 1) {
+    catYears = 15;
+    dogYears = 15;
+  } else if (humanYears === 2) {
+    catYears = 24;
+    dogYears = 24;
+  } else if (humanYears > 2) {
+    catYears = 24 + (humanYears - 2) * 4;
+    dogYears = 24 + (humanYears - 2) * 5;
+  }
+
+  return [humanYears, catYears, dogYears];
+}
+
+
+Our football team finished the championship. The result of each match look like "x:y". Results of all matches are recorded in the collection.
+
+For example: ["3:1", "2:2", "0:1", ...]
+
+Write a function that takes such collection and counts the points of our team in the championship. Rules for counting points for each match:
+
+if x > y: 3 points
+if x < y: 0 point
+if x = y: 1 point
+Notes:
+
+there are 10 matches in the championship
+0 <= x <= 4
+0 <= y <= 4
+
+Ans.
+
+function points(games) {
+  let totalPoints = 0;
+  
+  for(let i = 0; i < games.length; i++){
+    
+    const value = games[i];
+    const parts = value.split(":");
+    
+    const x = parts[0];
+    const y = parts[1];
+    
+    if(x > y)
+      totalPoints = totalPoints + 3;
+    else if(x === y)
+      totalPoints += 1;    
+    
+  }
+  
+  return totalPoints;
+}
+
+const points=games=>games.reduce((output,current)=>{
+    return output += current[0]>current[2] ? 3 : current[0]===current[2] ? 1 : 0;
+  },0)
+
+
+function points(games) {
+  let total = 0;
+  games.map(game => {
+    if (game[0] === game[2]) {
+      total += 1;
+    } else if (game[0] > game[2]) {
+      total += 3;
+    }
+  });
+  return total;
+}
+
+
+Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+
+Ans.
+
+function countSheeps(arrayOfSheep) {
+  let numberOfSheep = 0
+  arrayOfSheep.forEach(sheep => sheep ? numberOfSheep++ : false)
+  return numberOfSheep
+}
+
+function countSheeps(arrayOfSheeps) {
+  return arrayOfSheeps.filter(Boolean).length;
+}
+
+function countSheeps(arrayOfSheep) {
+  // TODO May the force be with you
+  var num = 0;
+  
+  for(var i = 0; i < arrayOfSheep.length; i++)
+    if(arrayOfSheep[i] == true)
+      num++;
+      
+  return num;
+}
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript
+
+CallBack Functions
+
+>function myCallBack(someNumber){
+  return someNumber *2;
+}
+function mainFunction(randomNumber, shouldCall, callBack){
+  let result = randomNumber;                                                                                                                                                if(shouldCall){
+    result = callBack(randomNumber);
+  }                                                                                 return result;
+} 
+>mainFunction(20, true, myCallBack);
+
+40
+
+>mainFunction(20, true, (num) => num *2);
+40 
+>myCallback(20);
+40
+>mainFunction(20, true, function (num){
+  return num *2;
+})
+40 
+>mainFunction(20, true, (num)=>{
+  return num *2;
+})
+40 
+
+Map method with callback function
+
+> const myArray = [2,4,6,8,10];
+undefined
+> function myCustomMapOperationCallback(itemArray){
+  return itemArray * 2;
+} 
+undefined
+> const newArray = myArray.map(myCustomMapOperationCallback);
+undefined
+> newArray
+Array(5) [ 4, 8, 12, 16, 20 ]
+
+> const strArray = ['Hello','World', 'my','name','is','michael'];
+undefined
+> strArray.map(itemArray => itemArray[0]);
+Array(6) [ "H", "W", "m", "n", "i", "m" ]
+
+Javascript Primitives
+
+> const string1 = new String('Hello, world!'); // string but an object
+> const string2 = 'Hello, world!'; // It is string primitive
+> console.log(string1 === string2); //false
+> console.log(string1 == string2); // true
+false 
+true  
+undefined 
+
+> 'Hello world'.toUpperCase();
+"HELLO WORLD" 
+
+Date Objects
+
+> const now = new Date();//date objects
+undefined
+> now
+Date Thu Sep 08 2022 11:08:02 GMT+0800 (Philippine Standard Time)
+> now.toString();
+"Thu Sep 08 2022 11:08:02 GMT+0800 (Philippine Standard Time)" 
+> now.toISOString();
+"2022-09-08T03:08:02.479Z" 
+> now.getDate();
+8 
+> now.getMonth();
+8 
+> now.getFullYear();
+2022 
+
+Regular Expressions
+
+> const emailValidatorRegex = new RegExp('^.+@.+\..+$');
+undefined
+> const userInput = 'invalidemail@g';
+undefined
+> const isValid = emailValidatorRegex.test(userInput); 
+undefined
+> isValid
+false 
+
+
+> const string1 = "My favorite food is steak";
+undefined
+> const string2 = "My favorite thing to do is code";
+undefined
+> const regex = new RegExp('g');
+undefined
+> regex.test(string1);
+false
+> regex.test(string2);
+true 
+> /[a-z]/.test(string1);
+true
+> /[0-0]/.test(string2);
+false 
+> /\d/.test(string1);
+false
+> /\d/.test(string2);
+false 
+> /\w/.test(string1);
+true 
+> /^f/.test(string1); // starting from the letter f
+false 
+> /k$/.test(string1); // ending the letter k.
+true
+> /(code||steak)/.test(string1); // group by either steak or code
+true 
+> /[a-z]/.exec(string1); // find atleast 1 that required
+Array [ "y" ]
+> /[a-z ]{2,6}/.exec(string1);
+Array [ "y favo" ]
+
+> const str = "hello world, 2022 @ more of a string";
+undefined
+> /^[a-z ]+,[0-9 ]+@[a-z ]+$/.exec(str);
+Array [ "hello world, 2022 @ more of a string" ]
+> /.+/.exec(str); //shorthand
+Array [ "hello world, 2022 @ more of a string" ]
+
+
+replaceAll,toUpperCase, substring, trim
+
+> const myString = 'My Dog jumped on the bed. My dog is a bad Dog';
+undefined
+> const newString = myString.replaceAll('Dog', 'Cat');
+undefined
+> newString
+"My Cat jumped on the bed. My Cat is a bad dog" 
+> const correctStr = myString.replaceAll(/[Dd]{1}og/g, 'cat'); 
+"My cat jumped on the bed. My cat is a bad cat" 
+> const correctStr = newString.replaceAll(/[Dd]{1}og/g, 'cat');
+undefined
+> correctStr
+"My Cat jumped on the bed. My cat is a bad Cat" 
+
+> const myString = 'some string'
+undefined
+> myString.toUpperCase();
+"SOME STRING" 
+
+> myString[0].toUpperCase() + myString.substring(1, myString.length);
+"Some string" 
+
+> myString[0].trim('  ');
+"s" 
+
+Match
+
+> const regex = /[a-z]+/
+undefined
+> const str = 'asdsafgaaasd1232fdgdd'
+undefined
+> str.match(regex);
+Array [ "asdsafgaaasd" ]
+
+Push, Pop, unshift, Slice, Splice, indexof, findIndex
+
+> const arr = [1,2,3,4,5];
+undefined
+> arr.pop();
+5
+> arr.pop()
+4
+> arr
+Array(3) [ 1, 2, 3 ]
+
+> arr.push(4,5,6);
+6
+> arr
+Array(6) [ 1, 2, 3, 4, 5, 6 ]
+
+> arr.unshift(0);
+7
+> arr
+Array(7) [ 0, 1, 2, 3, 4, 5, 6 ]
+
+
+> const arr = [1,2,3,4,5,6,7];
+undefined
+> const copyArr = arr.slice();
+undefined
+> copyArr
+Array(7) [ 1, 2, 3, 4, 5, 6, 7 ]
+> arr === copyArr
+false
+> const anotherCopy = arr.slice(3);
+undefined
+> anotherCopy
+Array(4) [ 4, 5, 6, 7 ]
+
+
+
+> const arr = [1,2,3,'oops',5,6,7];
+undefined
+> arr.splice(3, 1, 3.5);
+Array [ "oops" ]
+> arr
+Array(7) [ 1, 2, 3, 3.5, 5, 6, 7 ]
+
+> arr.indexOf(3.5);
+3
+> arr[arr.indexOf(3.5)];
+3.5 
+
+> const moreComplexArr = [
+  {
+    firstname: 'Bob',                                                                                                                                                                   lastname:  'Smith'
+  },{
+    firstname: 'Alice',                                                                                                                                                             lastname:  'Smith'
+  },{
+    firstname: 'Jon',                                                                                                                                                                   lastname:  'Smith'
+  },{
+    firstname: 'Jon',                                                                                                                                                                 lastname:  'Doe'
+  }
+];
+undefined
+> moreComplexArr.findIndex((arrItem)=>{
+  return arrItem.lastname !== 'Smith';
+})
+3 
+
+Map
+
+> const blogPostsFromDatabase = [
+  {
+    title: 'How to use map() function?',                                                                                                                            category: 'uncategorized'
+  },{
+    title: 'What is Javascript?',                                                                                                                                           category: 'uncategorized'
+  },{
+    title: 'Why are you crazy enough to learn to code?',                                                                                            category: 'uncategorized'
+  }
+];
+undefined
+> blogPostsFromDatabase.map((arrItem) => {
+  arrItem.category = 'Web Development';                                                                                                                         return arrItem;
+});
+
+Array(3) [ {…}, {…}, {…} ]
+​
+0: Object { title: "How to use map() function?", category: "Web Development" }
+​
+1: Object { title: "What is Javascript?", category: "Web Development" }
+​
+2: Object { title: "Why are you crazy enough to learn to code?", category: "Web Development" }
+​
+length: 3
+​
+<prototype>: Array []
+
+
+Foreach
+
+> const arr = [1,2,3];
+undefined
+> arr.forEach((arrItem) => {
+  console.log(arrItem);
+});
+1 
+2 
+3 
+undefined 
+
+> arr.forEach((arrItem, Index) => {
+  console.log(arrItem);                                                         console.log(Index);
+});
+1 
+0 
+2 
+1 
+3 
+2
+
+
+includes
+
+> const colors = ['blue','red','orange', 'yellow', 'purple'];
+undefined
+> colors.includes('red');
+true
+> colors.indexOf('red') !== -1;
+true 
+
+
+Filter
+
+> const allOrder = [
+  {
+    productName: 'Tea Pot', isDigital: false, isCancelled: false                                                    
+  },{
+    productName: 'Code Complete kiddie book', isDigital: true, isCancelled: true
+  },{
+    productName: 'Atomic Habits kiddie book', isDigital: true, isCancelled: false
+  }
+];
+undefined
+> const digitalOrders = allOrder.filter(arrItem => {
+  return arrItem.isDigital;
+});
+undefined
+> digitalOrders
+Array [ {…}, {…} ]
+​
+0: Object { productName: "Code Complete kiddie book", isDigital: true, isCancelled: true }
+​
+1: Object { productName: "Atomic Habits kiddie book", isDigital: true, isCancelled: false }
+​
+length: 2
+​
+<prototype>: Array []
+
+> const digitalCancelledOrders = allOrder.filter(orderItem => {
+  return orderItem.isDigital && orderItem.isCancelled;
+});
+undefined
+> digitalCancelledOrders
+Array [ {…} ]
+​
+0: Object { productName: "Code Complete kiddie book", isDigital: true, isCancelled: true }
+​
+length: 1
+​
+<prototype>: Array []
+
+Reduce
+
+> const arr = [10,20,30,25,14];
+undefined
+> let sum = 0;
+undefined
+> for(let i = 0; i < arr.length; i++){
+  sum += arr[i];
+}
+99 // answer
+> function reducerCallback(sum, arrItem) {
+  return sum += arrItem;
+}
+undefined
+> const result = arr.reduce(reducerCallback, 0);
+undefined
+> result
+99 // same answer
+> arr.reduce((sum, arrItem) => sum += arrItem);
+99 // much shorthand answer
+arr.reduce((sum, arrItem) => sum += arrItem) / arr.length;
+19.8 // average sum
+
+https://lodash.com/docs/4.17.15
+use lodash for external libraries addition javascript methods like this
+
+const obj1 = {
+  prop1: 'some value'
+};
+undefined
+const obj2 = {
+  prop2 : 'some value 2'
+};
+undefined
+obj1 === obj2
+false 
+
+> _.isEqual(obj1, obj2);
+true
+
+Math Utilities
+
+> Math.PI
+3.141592653589793
+> Math.E
+2.718281828459045
+> Math.abs(-60);
+60
+> Math.ceil(Math.PI)
+4
+> Math.floor(Math.PI)
+3
+> Math.round(Math.PI)
+3
+> Math.min(1,2,3,4,5);
+1
+> Math.max(2,4,6,8,10);
+10
+> Math.random();
+0.6697319482312737 
+
+random():
+
+> const randomNumber = Math.random();
+undefined
+> randomNumber
+0.7392981594518523
+> const largerNumber = randomNumber * 100;
+undefined
+> largerNumber
+73.92981594518523
+> Math.floor(largerNumber);
+73 
+
+> const arr = ['some','values','blah','blah2','blah3'];
+undefined
+> const randomIndex = Math.floor(Math.random() * arr.length);
+undefined
+> arr[randomIndex]
+"blah"  
+
+10 Intermediate Challenges
+
+Challenge1
+
+In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+Example
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+
+
+Ans.
+
+function filter_list(numArr) {
+ return numArr.filter(callbackFunc);
+}
+
+function callbackFunc(arrItem){
+  return arrItem >= 0 && typeof arrItem === 'number';
+}
+
+
+function filter_list(l) {
+  return l.filter(function(v) {return typeof v == 'number'})
+}
+
+function filter_list(l) {
+ return l.filter(v => typeof v == "number")
+}
+
+function filter_list(l) {
+  return l.filter(e => Number.isInteger(e));
+}
+function filter_list(l) {
+  return l.filter(Number.isInteger);
+}
+
+
+Challenge 2
+
+Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
+
+It should remove all values from list a, which are present in list b keeping their order.
+
+arrayDiff([1,2],[1]) == [2]
+If a value is present in b, all of its occurrences must be removed from the other:
+
+arrayDiff([1,2,2,2,3],[2]) == [1,3]
+
+Ans.
+
+function arrayDiff(a, b) {
+  if(a.length === 0)
+    return [];
+  if(b.length === 0)
+    return a;
+  
+  let newA = a;
+  let newB = b;
+  
+  // [1,2,2,3][2,3]
+  
+  a.forEach((arrItem, arrIndex) => {
+    const aCopy = newA.slice();
+    const bCopy = newB.slice();
+    
+    // We found this element in both arrays
+    
+    if(b.includes(arrItem))
+      newA = aCopy.filter(item => item !== arrItem);
+      newB = bCopy.filter(item => item !== arrItem);   
+  });
+  
+  return newA;
+}
+
+
+function array_diff(a, b) {
+  return a.filter(e => !b.includes(e));
+}
+
+function array_diff(a, b) {
+  return a.filter(function(x) { return b.indexOf(x) == -1; });
+}
+
+var array_diff = (a, b) => a.filter(item => b.indexOf(item) < 0)
+
+array_diff = require("lodash").difference;
+
+Challenge 3
+
+Given: an array containing hashes of names
+
+Return: a string formatted as a list of names separated by commas except for the last two names, which should be separated by an ampersand.
+
+Example:
+
+list([ {name: 'Bart'}, {name: 'Lisa'}, {name: 'Maggie'} ])
+// returns 'Bart, Lisa & Maggie'
+
+list([ {name: 'Bart'}, {name: 'Lisa'} ])
+// returns 'Bart & Lisa'
+
+list([ {name: 'Bart'} ])
+// returns 'Bart'
+
+list([])
+// returns ''
+Note: all the hashes are pre-validated and will only contain A-Z, a-z, '-' and '.'.
+
+Ans.
+
+function list(names){
+  let finalString = '';
+  
+  if(names.length === 1)
+    return names[0].name;
+  
+  //name get
+  names.forEach((arrItem, arrIndex) => {
+    const name = arrItem.name;
+    if(arrIndex === names.length - 1)
+      finalString = finalString + ' & ' + name;
+    else if (arrIndex === names.length - 2)
+      finalString = finalString + name;
+    else
+      finalString = finalString + name + ', ';
+  });
+  
+  return finalString;
+}
+
+
+Challenge 4
+
+You live in the city of Cartesia where all roads are laid out in a perfect grid. You arrived ten minutes too early to an appointment, so you decided to take the opportunity to go for a short walk. The city provides its citizens with a Walk Generating App on their phones -- everytime you press the button it sends you an array of one-letter strings representing directions to walk (eg. ['n', 's', 'w', 'e']). You always walk only a single block for each letter (direction) and you know it takes you one minute to traverse one city block, so create a function that will return true if the walk the app gives you will take you exactly ten minutes (you don't want to be early or late!) and will, of course, return you to your starting point. Return false otherwise.
+
+Note: you will always receive a valid array containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
+
+Ans.
+
+function isValidWalk(walk) {
+  if(walk.length !== 10)
+    return false
+  
+   let noffSet = 0;
+   let woffSet = 0;
+   let eoffSet = 0;
+   let soffSet = 0;
+  
+  walk.forEach(direction => {
+  switch(direction)  {
+      case 'n':
+      noffSet += 1;
+      break;
+      case 'w':
+      woffSet += 1;
+      break;
+      case 'e':
+      eoffSet += 1;
+      break;
+      case 's':
+      soffSet += 1;
+  }
+  });
+   return noffSet - soffSet === 0 && woffSet - eoffSet === 0;
+}
+
+
+function isValidWalk(walk) {
+  const north = walk.filter(item => { return item === "n" }).length;
+  const south = walk.filter(item => { return item === "s" }).length;
+  const east = walk.filter(item => { return item === "e" }).length;
+  const west = walk.filter(item => { return item === "w" }).length;
+  
+  return walk.length === 10 && north === south && east === west;
+}
+
+Challenge 5:
+
+Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.
+
+For example (Input --> Output):
+
+39 --> 3 (because 3*9 = 27, 2*7 = 14, 1*4 = 4 and 4 has only one digit)
+999 --> 4 (because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2)
+4 --> 0 (because 4 is already a one-digit number)
+
+
+Ans.
+
+function persistence(num) {
+   for(var i = 0; num > 9; i++){
+     num = num.toString().split('').reduce((t, c) => c * t)
+   }
+  return i;
+}
+
+function persistence(num) {
+   var times = 0;
+   
+   num = num.toString();
+   
+   while (num.length > 1) {
+     times++;
+     num = num.split('').map(Number).reduce((a, b) => a * b).toString();
+   }
+   
+   return times;
+}
+
+const persistence = num => {
+  return `${num}`.length > 1 
+    ? 1 + persistence(`${num}`.split('').reduce((a, b) => a * +b)) 
+    : 0;
+}
+
+Challenge 6:
+
+ATM machines allow 4 or 6 digit PIN codes and PIN codes cannot contain anything but exactly 4 digits or exactly 6 digits.
+
+If the function is passed a valid PIN string, return true, else return false.
+
+Examples (Input --> Output)
+"1234"   -->  true
+"12345"  -->  false
+"a234"   -->  false
+
+Ans.
+
+function validatePIN (pin) {
+  const fourDigitsRegex = /(^[0-9]{4}$)/;
+  const sixDigitsRegex = /(^[0-9]{6}$)/;
+  
+  const result1 = pin.match(fourDigitsRegex);
+  const result2 = pin.match(sixDigitsRegex);
+  
+  return !(!result1 && !result2);
+}
+
+Challenge 7:
+
+Your task is simply to count the total number of lowercase letters in a string.
+
+Examples
+lowercaseCount("abc"); ===> 3
+
+lowercaseCount("abcABC123"); ===> 3
+
+lowercaseCount("abcABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"); ===> 3
+
+lowercaseCount(""); ===> 0;
+
+lowercaseCount("ABC123!@€£#$%^&*()_-+=}{[]|\':;?/>.<,~"); ===> 0
+
+lowercaseCount("abcdefghijklmnopqrstuvwxyz"); ===> 26
+
+Ans.
+
+function lowercaseCount(str){
+    const result = str.match(/[a-z]/g);
+  
+    return result ? result.length: 0;
+}
+
+
+function lowercaseCount(str){
+    return (str.match(/[a-z]/g) || []).length
+}
+
+function lowercaseCount(str){
+    return str.replace(/[^a-z]/g, "").length;
+}
+
+Challenge 8:
+
+Write a simple function that takes a Date as a parameter and returns a Boolean representing whether the date is today or not.
+
+Make sure that your function does not return a false positive by only checking the day.
+
+
+Ans.
+function isToday(date) {
+  const checkDay = date.getDate();
+  const checkMonth = date.getMonth();
+  const checkYear = date.getFullYear();
+  
+  const today = new Date();
+  
+  const todayDay = today.getDate();
+  const todayMonth = today.getMonth();
+  const todayYear = today.getFullYear();
+  
+  return checkDay === todayDay && checkMonth === todayMonth && checkYear === todayYear;
+}
+
+function isToday(date) {
+  return new Date().toDateString() === date.toDateString();
+}
+
+function isToday(date) {
+  var d = new Date();
+  return (d.getDate() == date.getDate() && d.getFullYear() == date.getFullYear() && d.getMonth() == date.getMonth());
+}
+
+
+Challenge 9:
+
+Given a string, capitalize the letters that occupy even indexes and odd indexes separately, and return as shown below. Index 0 will be considered even.
+
+For example, capitalize("abcdef") = ['AbCdEf', 'aBcDeF']. See test cases for more examples.
+
+The input will be a lowercase string with no spaces.
+
+Good luck!
+
+Ans.
+
+function capitalize(s){
+ const arr1 = s.split('');
+ const arr2 = s.split('');
+  
+ //Even capitalization
+  arr1.forEach((item, index, original)=>{
+    if(index % 2 === 0)
+    original[index] = item.toUpperCase();
+  });
+  
+  //Odd capitalization
+  arr2.forEach((item, index, original)=>{
+    if(index % 2 !== 0)
+    original[index] = item.toUpperCase();
+  });
+  
+  const arr1Strng = arr1.join('');
+  const arr2Strng = arr2.join('');
+  
+  return [arr1Strng, arr2Strng];
+  
+  
+};
+
+function capitalize(s){
+  const odd = s.split("").map((l, i) => i % 2 !== 0 ? l.toUpperCase() : l).join("");
+  const even = s.split("").map((l, i) => i % 2 === 0 ? l.toUpperCase() : l).join("");
+  return [even, odd];
+};
+
+
+function capitalize(s) {
+  const S = s.toUpperCase()
+  let a = ""
+  let b = ""
+  for (let i = 0; i < s.length; ++i) {
+    if (i & 1) {
+      a += s[i]
+      b += S[i]
+    } else {
+      a += S[i]
+      b += s[i]
+    }
+  }
+  return [a, b]
+}
+
+Challenge 10:
+
+Given a number , Return _The Maximum number _ could be formed from the digits of the number given .
+
+Input >> Output Examples:
+maxNumber (213) ==> return (321)
+
+Ans.
+
+function maxNumber(n){
+  return +n.toString().split('').sort((first, second) => second - first ).join('');
+}
+
+
+
+DOM manipulation
+
+> document.querySelector('button');
+> document.getElementById('btn-1');
+> document.getElementsByClassName('my-button');
+> document.querySelectorAll('button');
+> document.querySelectorAll('.my-button');
+> document.querySelectorAll('#btn-1');
+> window.alert('Hi!');
+
+> window.scrollBy({
+  top: 100,
+  left: 100,
+  behavior: 'smooth'
+});
+
+creating html content using console dom
+
+> const elementNode = document.createElement('p');
+undefined
+> const testNode = document.createTextNode('Content');
+undefined
+const attributeNote = document.createAttribute('class');
+undefined
+> elementNode
+<p>​</p>​
+> textNode
+"Content"
+> attributeNote
+class=​""
+> elementNode.appendChild(textNode);
+"Content"
+> elementNode
+<p>​Content​</p>​
+> attributeNote
+class=​""
+> attributeNote.value = 'some-class';
+'some-class'
+> attributeNote
+class=​"some-class"
+> elementNode.setAttributeNode(attributeNote);
+null
+> elementNode
+<p class=​"some-class">​Content​</p>​
+> document.body.appendChild(elementNode);
+<p class="some-class">Content</p>
+
+
+// to add button events javascript
+
+> const btn = document.querySelector('#btn-1');
+
+> function addParagraph(){
+  alert("Hello!");
+  console.log('Hello!')
+}
+
+> btn.onclick = addParagraph; 
+
+> const btn = document.querySelector('#btn-1');
+
+> function addParagraph(){
+  const randomNum = Math.floor(Math.random() * 100);
+  const pContent = "Your number is:" + " " + randomNum;
+  console.log(pContent);
+  alert(pContent);
+}
+
+>btn.onclick = addParagraph;
+
+
+> const btn = document.querySelector('#btn-1');
+
+> function addParagraph(){
+  const randomNum = Math.floor(Math.random() * 100);
+  const pContent = "Your number is:" + " " + randomNum;
+  const newElement = document.createElement('p');
+  newElement.textContent = pContent;
+  
+  document.body.appendChild(newElement);
+  console.log(pContent);
+  alert(pContent);
+}
+
+> btn.onclick = addParagraph;
+
+
+for Input text events
+
+ <input type="text" name="input1" id="name-1" placeholder="here is a placeholder" />
+ <p id="demo"></p>
+
+> const btn = document.querySelector('#btn-1');
+
+> function addParagraph(){
+  const randomNum = Math.floor(Math.random() * 100);
+  const pContent = "Your number is:" + " " + randomNum;
+  const newElement = document.createElement('p');
+  const newElement2 = document.createElement('p');
+  newElement.textContent = pContent;
+
+//here var x = document.querySelector("#name-1").value;
+       document.getElementById("demo").innerHTML = x;
+  
+  document.body.appendChild(newElement);
+  console.log(pContent);
+  alert(pContent);
+}
+
+btn.onclick = addParagraph;
+
+or
+
+> const btn = document.querySelector('#btn-1');
+
+> function addParagraph(){
+  const randomNum = Math.floor(Math.random() * 100);
+  const pContent = "Your number is:" + " " + randomNum;
+
+  const newElement = document.createElement('p');
+  newElement.textContent = pContent;
+
+  const newElement2 = document.createElement('p');
+  var x = document.querySelector("#name-1").value;
+  newElement2.innerHTML = x;
+  
+  document.body.appendChild(newElement);
+  document.body.appendChild(newElement2);
+  console.log(pContent);
+  alert(pContent);
+}
+
+btn.onclick = addParagraph;
+
+//to change list textcontent by Dom
+
+> const listItem = list.children.item(1);
+undefined
+> listItem.textContent = 'some new content';
+some new content
+
+// to add list content
+
+> list.appendChild(document.createElement('li'));
+<ul>
+<li> some new content </li>
+<li> </li>
+</ul>
+
+
+// insertBefore method
+
+> const pElem = document.querySelectorAll('p').item(1);
+undefined
+> const parent = document.querySelector('.main-body');
+undefined
+> parent
+<div class=main-body></div>
+> const newP = document.createElement('p');
+undefined
+> newP.textContent = 'programmatically added between';
+'programmatically added between'
+> parent.insertBefore(newP, pElem);
+<p>programmatically added between</p>
+
+Output
+
+/0 Some text in the article.
+
+/1 programmatically added between
+
+/2 some more text
+
+
+Most common CSS properties
+
+color.adobe.com
+
+
+//Nav and properties
+
+body{
+  margin: 0;
+}
+h4{
+  margin: 0;
+  line-height: 60px;
+  margin-left: 10px;
+}
+nav{
+  background-Color:navy;
+  height: 60px;
+  color:white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 1; //sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one.
+}
+
+.boxes{
+  margin-top: 80px;
+}
+
+.box{
+  width:200px;
+  height: 200px;
+  background-color: red;
+  margin: 20px;
+}
+
+.rel-position{
+  position: relative; //use this if you gonna put a child property next to it
+/*   width: 80%; for responsive purposes */
+}
+
+.abs-position{
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: absolute;  
+  top: 0px;
+  right: 0px;
+}
+
+
+//Font-text
+
+html{
+font-size: 16px;
+}
+
+p{
+ font-size: 1rem; //use this if you want to calculate from the main parent of fontsize
+}
+
+
+margin: 20px 5px 10px 20px
+=
+margin-top: 20px;
+margin-right: 5px;
+margin-bottom: 10px;
+margin-left: 20px;
+
+border: 5px solid black;
+=
+border:width: 5px;
+border-color: black;
+border-style: solid;
+
+//background img
+
+<div class="main-content">
+<h1>Welcome to my Site</h1>
+</div>
+
+body{
+margin: 0;
+color: white;
+text-align: center;
+}
+
+p, h1{
+margin: 0;
+}
+
+h1{
+padding-top: 50px;
+}
+
+.main-content{
+width:100vw;
+height: 100vh;
+background-image: url();
+background-size: cover;
+background-repeat: no-repeat;
+background-position: right;
+}
+
+//Buildng Box Model
+
+Html
+
+<div class="container">
+  <div class="box-1">
+    <h2>Box 1</h2>
+    <p>some text</p>
+  </div>
+  <div class="box-2">
+    <h2>Box 2</h2>
+    <p>some text</p>
+  </div>
+</div>
+
+CSS
+
+.container{
+  display: flex;
+}
+
+.box-1{
+  border: 2px solid green;
+  color: green;
+}
+
+.box-2{
+  border: 2px solid blue;
+  color: blue;
+}
+
+.box-1, .box-2{
+  flex: 50%;
+  margin: 10px;
+  text-align: center;
+}
+
+Pricing Card Code Initial
+
+Html:
+
+<div id="card">
+  <div id="top-section">
+    <h2>Join our community</h2>
+    <h4>30-day, hassle-free money back guarantee</h4>
+    <p>Gain access to our full library of tutorials along with expert code reviews.  Perfect for any developers who are serious about honing their skills.</p>
+  </div>
+  <div id="bottom-section">
+    <div id="bottom-left-section">
+      <h4>Monthly Subscription</h4>
+      <div id="price-container">
+        <div id="price">$29</div>
+        <div id="price-frequency">per month</div>
+      </div>
+      <p>Full access for less than $1 a day</p>
+      <button onclick="alertUser()">Sign Up</button>
+    </div><div id="bottom-right-section">
+      <h4>Why Us</h4>
+      <ul>
+        <li>Tutorials by industry experts</li>
+        <li>Peer & expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+Css:
+
+html {
+  box-sizing: border-box;
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  padding: 20px;
+}
+
+h2, h4, p {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#card {
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 600px;
+  height: 400px;
+}
+
+#top-section {
+  width: 100%;
+  height: 45%;
+  padding: 25px;
+}
+
+#bottom-section {
+  width: 100%;
+  height: 55%;
+  color: white;
+}
+
+#bottom-left-section {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+  background-color: #2ab2af;
+  padding: 25px;
+}
+
+#bottom-right-section {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background-color: #2EBFBD;
+  vertical-align: top;
+  padding: 25px;
+}
+
+#top-section h2 {
+  color: #2ab2af;
+  margin-bottom: 20px;
+}
+
+#top-section h4 {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+
+#top-section p {
+  color: #98a6bd;
+}
+
+button {
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #A9C42D;
+  transform: scale(1.02);
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#bottom-left-section h4 {
+  margin-bottom: 25px;
+}
+
+#bottom-left-section p {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+}
+
+#price-frequency, #price {
+  display: inline-block;
+}
+
+#price-frequency {
+  position: relative;
+  top: -3px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+#price-container {
+  margin-bottom: 10px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+JS:
+
+function alertUser() {
+  alert('Hey, you clicked the button!');
+}
+
+
+https://screensiz.es/
+
+
+Responsive
+
+ @media (max-width: 992px ){
+  #card, #bottom-section{
+    width: auto;
+  }
+   
+   @media (max-width: 300px){
+  #card, #bottom-section{
+    width: auto;
+  }
+@media (max-width: 0px){
+  #card, #bottom-section{
+    width: auto;
+  }
+
+@media (min-width: 0px){
+  #card, #bottom-section{
+    width: auto;
+  }
+  @media (min-width: 300px){
+  #card, #bottom-section{
+    width: auto;
+  }
+ @media (min-width: 992px ){
+  #card, #bottom-section{
+    width: auto;
+  }
+
+
+ - correct answer
+Desktop First
+
+ @media (max-width: 650px ){
+  #card, #bottom-left-section, #bottom-right-section{
+    width: 100%;
+    height: auto;
+  }
+   
+
+Mobile First 
+
+CSS change:
+
+#card {
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  overflow: hidden;
+/*   width: 600px;
+  height: 400px; */
+}
+
+#bottom-left-section {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+  background-color: #2ab2af;
+  padding: 25px;
+}
+
+#bottom-right-section {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: #2EBFBD;
+  vertical-align: top;
+  padding: 25px;
+}
+
+@media (min-width: 650px ){
+  #card{
+	width: 550px;
+	height: 400px;
+	}
+
+  #bottom-left-section, #bottom-right-section{
+	width: 50%;
+	}
+  }
+
+
+Pricing Card Code Responsive Final
+
+Html:
+
+<div id="card">
+  <div id="top-section">
+    <h2>Join our community</h2>
+    <h4>30-day, hassle-free money back guarantee</h4>
+    <p>Gain access to our full library of tutorials along with expert code reviews.  Perfect for any developers who are serious about honing their skills.</p>
+  </div>
+  <div id="bottom-section">
+    <div id="bottom-left-section">
+      <h4>Monthly Subscription</h4>
+      <div id="price-container">
+        <div id="price">$29</div>
+        <div id="price-frequency">per month</div>
+      </div>
+      <p>Full access for less than $1 a day</p>
+      <button onclick="alertUser()">Sign Up</button>
+    </div><div id="bottom-right-section">
+      <h4>Why Us</h4>
+      <ul>
+        <li>Tutorials by industry experts</li>
+        <li>Peer & expert code review</li>
+        <li>Coding exercises</li>
+        <li>Access to our GitHub repos</li>
+        <li>Community forum</li>
+        <li>Flashcard decks</li>
+        <li>New videos every week</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+CSS:
+
+html {
+  box-sizing: border-box;
+  font-family: 'Karla';
+  font-size: 16px;
+  font-weight: 400;
+}
+
+body {
+  padding: 20px;
+}
+
+h2, h4, p {
+  margin: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+#card {
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  overflow: hidden;
+/*   width: 600px;
+  height: 400px; */
+}
+
+#top-section {
+  width: 100%;
+  height: 45%;
+  padding: 25px;
+}
+
+#bottom-section {
+  width: 100%;
+  height: 55%;
+  color: white;
+}
+
+/* #bottom-left-section {
+  display: inline-block;
+  width: 50%; 
+  height: 100%;
+  vertical-align: top;
+  background-color: #2ab2af;
+  padding: 25px;
+} 
+
+#bottom-right-section {
+  display: inline-block;
+  width: 50%; 
+  height: 100%;
+  background-color: #2EBFBD;
+  vertical-align: top; 
+  padding: 25px;
+}  */
+
+#top-section h2 {
+  color: #2ab2af;
+  margin-bottom: 20px;
+}
+
+#top-section h4 {
+  color: #c0df34;
+  margin-bottom: 10px;
+}
+
+#top-section p {
+  color: #98a6bd;
+}
+
+button {
+  color: white;
+  background-color: #c0df34;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #A9C42D;
+  transform: scale(1.02);
+}
+
+#price {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+#bottom-left-section h4 {
+  margin-bottom: 25px;
+}
+
+#bottom-left-section p {
+  font-size: 0.8rem;
+  margin-bottom: 40px;
+}
+
+#price-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+
+#price-frequency {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-left: 5px;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+ #card {
+  box-shadow: 2px 3px 7px 0px rgba(0,0,0,0.35);
+  border-radius: 5px;
+  overflow: hidden;
+/*   width: 600px;
+  height: 400px; */
+} 
+
+#bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 55%;
+  color: white;
+} 
+
+#bottom-left-section {
+  height: 100%;
+  background-color: #2ab2af;
+  flex-basis: 50%;
+  padding: 25px;
+  
+}
+
+#bottom-right-section {
+  height: 100%;
+  background-color: #2EBFBD;
+  padding: 25px;
+  flex-basis: 50%;
+}
+
+
+
+/* Desktop First */
+
+@media (min-width: 576px ){
+  #card{
+	width: 550px;
+	height: 400px;
+	}
+
+  #bottom-section {
+    flex-direction: row;
+  }
+/*   #bottom-left-section, #bottom-right-section{
+	width: 50%;
+	} */
+  }
+
+
+JS:
+
+function alertUser() {
+  alert('Hey, you clicked the button!');
+}
+
+
+
+
+
+Flex Box
+
+Flex Container Properties
+1.display
+2.flex-direction
+3.justify-content
+4.align-items
+5.flex wrap
+6. align-content
+
+Flex item Propeties
+1.align-self
+2.order
+3.flex-grow
+4.flex-shrink
+5.flex-basis
+6. shorthand- flex: 1 1 auto;
+
+
+frontendmentor.io/challenges
+
+make sure you configure your user.name and user.email in git
+to solve-git config --global user.name 'qmayo28'
